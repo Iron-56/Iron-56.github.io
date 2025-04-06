@@ -1,0 +1,16 @@
+{
+	"name": "Weather App",
+	"description": "A simple weather app",
+	"version": "1.0",
+	"manifest_version": 3,
+	"action": {
+		"default_popup": "index.html",
+		"default_icon": "icon.png"
+	},
+	"permissions": [
+		"geolocation"
+	],
+	"icons": {
+		"128": "icon.png"
+	}
+}

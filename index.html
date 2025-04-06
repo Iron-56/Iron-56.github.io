@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>	
+	<aside>
+		<div>
+			<div id="profile">
+				<img src="assets/profile.jpeg">
+				<p>Nandu Krishna</p>
+				<p class="ghost">Full Stack Developer</p>
+			</div>
+			
+			<div id="details">
+				<p><span class="label">Residence:</span> <span class="ghost">India</span></p>
+				<p><span class="label">City:</span> <span class="ghost">Malappuram</span></p>
+				<p><span class="label">Age:</span> <span class="ghost">19</span></p>
+			</div>
+
+			<div id="languages">
+				<div>
+					<svg class="circular-progress" viewBox="0 0 100 100">
+						<circle cx="50" cy="50" r="40" stroke="#ddd" stroke-width="10" fill="none"/>
+						<circle cx="50" cy="50" r="40"stroke="#4caf50" stroke-width="10" fill="none" stroke-dasharray="251.2" stroke-dashoffset="75"/>
+					</svg>
+					<p>English</p>
+				</div>
+				<div>
+					<svg class="circular-progress" viewBox="0 0 100 100">
+						<circle cx="50" cy="50" r="40" stroke="#ddd" stroke-width="10" fill="none"/>
+						<circle cx="50" cy="50" r="40"stroke="#4caf50" stroke-width="10" fill="none" stroke-dasharray="251.2" stroke-dashoffset="75"/>
+					</svg>
+					<p>Malayalam</p>
+				</div>
+				<div>
+					<svg class="circular-progress" viewBox="0 0 100 100">
+						<circle cx="50" cy="50" r="40" stroke="#ddd" stroke-width="10" fill="none"/>
+						<circle cx="50" cy="50" r="40"stroke="#4caf50" stroke-width="10" fill="none" stroke-dasharray="251.2" stroke-dashoffset="75"/>
+					</svg>
+					<p>Hindi</p>
+				</div>
+			</div>
+			
+			<div id="skills">
+				<div>
+					<div class="skill-lang">
+						<p>Frontend</p>
+						<p>50%</p>
+					</div>
+					<div class="progress-bar">
+						<div style="width: 50%"></div>
+					</div>
+				</div>
+				<div>
+					<div class="skill-lang">
+						<p>Backend</p>
+						<p>60%</p>
+					</div>
+					<div class="progress-bar">
+						<div style="width: 60%"></div>
+					</div>
+				</div>
+				<div>
+					<div class="skill-lang">
+						<p>Flutter</p>
+						<p>60%</p>
+					</div>
+					<div class="progress-bar">
+						<div style="width: 60%"></div>
+					</div>
+				</div>
+			</div>
+
+			<div style="text-align: left;">
+				<h2>Hello!</h2>
+				<p class="ghost" style="margin-bottom: 0;">I am a passionate developer with a strong foundation in web development, game development, and mobile app development. I have experience in various technologies and frameworks, and I am always eager to learn and explore new things. My goal is to create innovative solutions that make a positive impact on people's lives.</p>
+			</div>
+		</div>
+		<footer>
+			<button id="about-back">BACK</button>
+			<a href="https://github.com/Iron-56"><img src="assets/github.svg"></a>
+			<a href="https://www.linkedin.com/in/nandu-krishna-8b1ab2334/"><img src="assets/linkedln.png"></a>
+			<a href="mailto:nandukrishna.mpm@gmail.com"><img src="assets/gmail.png"></a>
+		</footer>
+	</aside>
+	<main>
+		<nav>
+			<a href="#about" onclick="handleMenuClick(event)">About</a>
+			<a href="#home" id="home" onclick="handleMenuClick(event)">Home</a>
+			<a href="#projects" id="projects" onclick="handleMenuClick(event)">Projects</a>
+			<a href="#certificates" id="certificates" onclick="handleMenuClick(event)">Certificates</a>
+			<a href="#resume" id="resume">Resume</a>
+		</nav>
+		
+		<header>
+			<section>
+				<p>Discover my Creative Art Space!</p>
+				<button href="#projects" id="button-explore" onclick="handleMenuClick(event)">EXPLORE</button>
+			</section>
+			<div>
+				<p><span>2+</span>Years of Experience</p>
+				<p><span>10+</span>Projects Completed</p>
+				<p><span>5+</span>Happy Clients</p>
+			</div>
+		</header>
+
+		<div id="content"></div>
+
+		<template id="template-home">
+			<p>My Services</p>
+			<div>
+				<div>
+					<h3>Web Development</h3>
+					<p class="ghost">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nam minima numquam, assumenda temporibus rem quia? Vero nihil sit voluptas repellendus, omnis dolorum consequatur, laudantium placeat possimus saepe labore ipsa!</p>
+				</div>
+				<div>
+					<h3>Game Development</h3>
+					<p class="ghost">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nam minima numquam, assumenda temporibus rem quia? Vero nihil sit voluptas repellendus, omnis dolorum consequatur, laudantium placeat possimus saepe labore ipsa!</p>
+				</div>
+				<div>
+					<h3>Flutter</h3>
+					<p class="ghost">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nam minima numquam, assumenda temporibus rem quia? Vero nihil sit voluptas repellendus, omnis dolorum consequatur, laudantium placeat possimus saepe labore ipsa!</p>
+				</div>
+				<div>
+					<h3>Next.js</h3>
+					<p class="ghost">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nam minima numquam, assumenda temporibus rem quia? Vero nihil sit voluptas repellendus, omnis dolorum consequatur, laudantium placeat possimus saepe labore ipsa!</p>
+				</div>
+				<div>
+					<h3>Flask Backend</h3>
+					<p class="ghost">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nam minima numquam, assumenda temporibus rem quia? Vero nihil sit voluptas repellendus, omnis dolorum consequatur, laudantium placeat possimus saepe labore ipsa!</p>
+				</div>
+				<div>
+					<h3>Django Backend</h3>
+					<p class="ghost">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nam minima numquam, assumenda temporibus rem quia? Vero nihil sit voluptas repellendus, omnis dolorum consequatur, laudantium placeat possimus saepe labore ipsa!</p>
+				</div>
+				<div>
+					<h3>Systems</h3>
+					<p class="ghost">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nam minima numquam, assumenda temporibus rem quia? Vero nihil sit voluptas repellendus, omnis dolorum consequatur, laudantium placeat possimus saepe labore ipsa!</p>
+				</div>
+			</div>
+		</template>
+
+
+		<template id="template-projects">
+			<p>My Projects</p>
+			<div>
+				<div>
+					<h3>Simple Captcha Solver</h3>
+					<div>
+						<p>OpenCV</p>
+						<p>Pillow</p>
+						<p>PyTesseract</p>
+						<p>Python</p>
+					</div>
+					<p class="ghost">An automated captcha solver using OpenCV and PyTesseract. Processes images to extract text from captchas.</p>
+				</div>
+				<div>
+					<div class="project-title">
+						<h3>Trapped</h3>
+						<a href="/Projects/Trapped/">
+							<button><img src="assets/play.svg"></button>
+						</a>
+					</div>
+					<div>
+						<p>HTML</p>
+						<p>Phaser.js</p>
+						<p>Javascript</p>
+					</div>
+					<p class="ghost">A simple Sokoban game built using phaser game engine. Uses bmp images to convert to playable levels.</p>
+				</div>
+				<div>
+					<h3>Web Chat Application</h3>
+					<div>
+						<p>Django</p>
+						<p>Python</p>
+					</div>
+					<p class="ghost">A real-time web chat application built with Django and Python. It supports multiple users and chat rooms. Implements WebSockets for instant messaging.</p>
+					<p style="color: orangered">Underdevelopment</p>
+				</div>
+				<div>
+					<div class="project-title">
+						<h3>BinIt</h3>
+						<a href="https://www.youtube.com/watch?v=47fBzHXPXys">
+							<button><img src="assets/play.svg"></button>
+						</a>
+					</div>
+					<div>
+						<p>Next.js</p>
+						<p>React</p>
+						<p>Tailwind</p>
+						<p>Leaflet.js</p>
+						<p>TypeScript</p>
+						<p>javaScript</p>
+					</div>
+					<p class="ghost">A community-driven platform that allows users to map locations of unmanaged waste. Volunteers, clubs, and NGOs can take action, clean these areas, and upload images.</p>
+					<p style="color: orangered">Underdevelopment</p>
+				</div>
+				<div>
+					<h3>Game Engine</h3>
+					<div>
+						<p>C++</p>
+						<p>OpenGL</p>
+						<p>SDL2</p>
+						<p>GLSL</p>
+					</div>
+					<p class="ghost">A custom game engine built using C++ with OpenGL and SDL2 for rendering. Supports both 2D and 3D graphics rendering. The engine is lightweight and easily scalable. Uses GLSL for shader programming.</p>
+				</div>
+				<div>
+					<h3>Pokedex</h3>
+					<div>
+						<p>Flutter</p>
+					</div>
+					<p class="ghost">A mobile app to browse Pokémon details, built with Flutter. Displays Pokémon stats, abilities, and images. Uses API integration for data fetching.</p>
+				</div>
+				<div>
+					<h3>Poke-Search</h3>
+					<div>
+						<p>PySide6</p>
+						<p>Python</p>
+					</div>
+					<p class="ghost">A desktop Pokémon search app built using PySide6 and Python. Provides quick lookup of Pokémon stats and abilities. Features pokemon capturing, displaying captured pokemons and a user-friendly UI navigation.</p>
+				</div>
+				<div>
+					<div class="project-title">
+						<h3>Drum Kit</h3>
+						<a href="/Projects/Drum Kit/">
+							<button><img src="assets/play.svg"></button>
+						</a>
+					</div>
+					<div>
+						<p>HTML</p>
+						<p>CSS</p>
+						<p>Javascript</p>
+					</div>
+					<p class="ghost">A virtual drum kit playable using keyboard or mouse clicks. Built with HTML, CSS, and JavaScript for an interactive experience. Includes sound effects for realism.</p>
+				</div>
+				<div>
+					<h3>Birdie</h3>
+					<div>
+						<p>Flutter</p>
+						<p>Flame</p>
+						<p>Tiled</p>
+					</div>
+					<p class="ghost">A 2D side-scrolling game developed with Flutter and Flame engine. Used Tiled for level design. Includes animated player and obstacles for gameplay.</p>
+				</div>
+				<div>
+					<div class="project-title">
+						<h3>Weather App</h3>
+						<a href="./Projects/Weather App/">
+							<button><img src="assets/play.svg"></button>
+						</a>
+					</div>
+					
+					<div>
+						<p>Chrome Extensions</p>
+						<p>HTML</p>
+						<p>CSS</p>
+						<p>Javascript</p>
+						<p>Openweathermap</p>
+					</div>
+					<p class="ghost">A Chrome extension which provides real-time weather updates. Uses Open Weather Map API for live forecasts. Displays temperature, place, and weather condition.</p>
+				</div>
+				<div>
+					<h3>Simple Shell</h3>
+					<div>
+						<p>C</p>
+						<p>Fork</p>
+						<p>Execvp</p>
+					</div>
+					<p class="ghost">A lightweight shell implementation using C. Supports basic Unix commands with fork and execvp system calls. Enables process management and command execution.</p>
+				</div>
+				<div>
+					<h3>LetterBoxd</h3>
+					<div>
+						<p>Figma</p>
+						<p>Next.js</p>
+						<p>Tailwind</p>
+						<p>React</p>
+					</div>
+					<p class="ghost">A movie-tracking platform built with Next.js and React. Designed in Figma with a sleek UI, styled using Tailwind. Features personalized movie lists and reviews.</p>
+					<p style="color: orangered">Underdevelopment</p>
+				</div>
+			</div>
+		</template>
+		
+		<template id="template-certificates">
+			<p>My Certificates</p>
+			<div>
+				<div>
+					<h3>AWS Certified Developer - Associate</h3>
+					<p class="ghost">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nam minima numquam, assumenda temporibus rem quia? Vero nihil sit voluptas repellendus, omnis dolorum consequatur, laudantium placeat possimus saepe labore ipsa!</p>
+				</div>
+				<div>
+					<h3>Certified Kubernetes Administrator (CKA)</h3>
+					<p class="ghost">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nam minima numquam, assumenda temporibus rem quia? Vero nihil sit voluptas repellendus, omnis dolorum consequatur, laudantium placeat possimus saepe labore ipsa!</p>
+				</div>
+				<div>
+					<h3>Microsoft Certified: Azure Developer Associate</h3>
+					<p class="ghost">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nam minima numquam, assumenda temporibus rem quia? Vero nihil sit voluptas repellendus, omnis dolorum consequatur, laudantium placeat possimus saepe labore ipsa!</p>
+				</div>
+				<div>
+					<h3>Oracle Certified Java Programmer</h3>
+					<p class="ghost">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nam minima numquam, assumenda temporibus rem quia? Vero nihil sit voluptas repellendus, omnis dolorum consequatur, laudantium placeat possimus saepe labore ipsa!</p>
+				</div>
+				<div>
+					<h3>Google Associate Cloud Engineer</h3>
+					<p class="ghost">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nam minima numquam, assumenda temporibus rem quia? Vero nihil sit voluptas repellendus, omnis dolorum consequatur, laudantium placeat possimus saepe labore ipsa!</p>
+				</div>
+				<div>
+					<h3>Certified Ethical Hacker (CEH)</h3>
+					<p class="ghost">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nam minima numquam, assumenda temporibus rem quia? Vero nihil sit voluptas repellendus, omnis dolorum consequatur, laudantium placeat possimus saepe labore ipsa!</p>
+				</div>
+				<div>
+					<h3>Google Professional Cloud Developer</h3>
+					<p class="ghost">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nam minima numquam, assumenda temporibus rem quia? Vero nihil sit voluptas repellendus, omnis dolorum consequatur, laudantium placeat possimus saepe labore ipsa!</p>
+				</div>
+			</div>
+		</template>
+
+		<template id="template-resume">
+			<embed src="assets/Resume.pdf#toolbar=0" style="width: 100%; height: 100%;" type="application/pdf">
+		</template>
+	</main>
+</body>
+</html>

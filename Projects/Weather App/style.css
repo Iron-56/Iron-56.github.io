@@ -1,0 +1,99 @@
+#container {
+	padding: 20px;
+	width: 300px;
+	height: auto;
+	text-align: center;
+	background-image: url(day.png);
+	background-size: 555px;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: 0px;
+	background-color: rgb(7, 21, 32);
+	color: rgb(0, 0, 0);
+	margin: 0px;
+	align-content: center;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+#welcome {
+	margin: 20px;
+	padding-top: 10px;
+	padding-bottom: 40px;
+	font-size: 20px;
+	font: italic "Arial" black;
+}
+
+#data {
+	padding: 10px;
+	margin: auto;
+	font-size: 20px;
+	text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+             1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+	background-color: rgba(78, 94, 107, 0.7);
+	border: 1px solid black;
+
+	border-radius: 24px;
+	max-width: min-content;
+}
+
+.myfont {
+	padding: 5px;
+	margin: 7px;
+	margin-left: 40px;
+	margin-right: 40px;
+	font-size: 20px;
+	font: italic Arial;
+	color: white;
+	text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+             1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+#search {
+	margin: 10px;
+	padding: 10px;
+	font-size: 20px;
+	font: italic "Arial" black;
+}
+
+input {
+	margin-top: 0px;
+	margin-left: 1px;
+	margin-right: 1px;
+	padding: 10px;
+	border-radius: 20px;
+	border: 2px solid black;
+}
+
+button {
+	margin-top: 0px;
+	margin-left: 1px;
+	margin-right: 1px;
+	padding: 10px;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+
+button:hover {
+	background-color: rgba(78, 94, 107, 0.7);
+}
+
+#error {
+	margin: 7px;
+	font-size: 16px;
+	font: italic Arial black;
+	color: rgb(211, 151, 151);
+	background-color: transparent;
+	text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000,
+             1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+html {
+	overflow: hidden;
+	height: 300px;
+}

@@ -1,0 +1,83 @@
+body {
+	text-align: center;
+	background-color: #283149;
+	font-family: "PT Sans Narrow"
+}
+
+h1 {
+	font-size: 5rem;
+	color: #DBEDF3;
+	text-shadow: 3px 0 #DA0463;
+}
+
+.w {
+	background-color: #9e6818;
+}
+
+.a {
+	background-color: antiquewhite;
+}
+
+.s {
+	background-color: #DA0463;
+}
+
+.d {
+	background-color: coral;
+}
+
+.j {
+	background-color: cornflowerblue
+}
+
+.k {
+	background-color: darkkhaki;
+}
+
+.l {
+	background-color: dimgray;
+}
+
+.set {
+	margin: 10% auto;
+}
+
+.pressed {
+	box-shadow: 0 3px 4px 0 #DBEDF3;
+	opacity: 0.5;
+}
+
+.drum {
+	outline: none;
+	border: 10px solid #404B69;
+	font-size: 5rem;
+	font-weight: 900;
+	color: #3d3538;
+	text-shadow: 3px 0 #000000;
+	border-radius: 15px;
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	margin: 10px;
+	box-shadow: black 7px 7px;
+	font-family: "PT Sans Narrow";
+}
+
+.pressed {
+	transition: box-shadow 0.2s ease, transform 0.2s ease;
+	box-shadow: 4px 4px inset;
+	transform: scale(0.98);
+}
+
+.pt-sans-narrow-regular {
+	font-family: "PT Sans Narrow", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.pt-sans-narrow-bold {
+	font-family: "PT Sans Narrow", serif;
+	font-weight: 700;
+	font-style: normal;
+}
